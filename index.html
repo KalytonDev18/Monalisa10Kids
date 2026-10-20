@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monalisa 10 Kids | Moda infantil de 0 a 12 anos</title>
+<meta name="description" content="Moda infantil com cor, conforto e alegria para bebês e crianças de 0 a 12 anos. Pix com desconto, parcelamento no cartão e retirada na loja.">
+<meta property="og:title" content="Monalisa 10 Kids | Moda infantil de 0 a 12 anos">
+<meta property="og:description" content="Cor, conforto e muita brincadeira em cada look.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23FFD23F%22/><text x=%2250%22 y=%2266%22 font-size=%2248%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%230A0A0A%22>10</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { ink:'#0A0A0A', card:'#151515', line:'#262626', sun:'#FFD23F', bubble:'#FF5CA8', tangerine:'#FF8A3D', sky:'#3DA5FF', leaf:'#3DDC84' },
+      fontFamily: { display:['Fredoka','sans-serif'], sans:['Nunito','sans-serif'] }
+    } }
+  }
+</script>
+
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#0A0A0A}
+  :focus-visible{outline:3px solid #3DA5FF;outline-offset:3px;border-radius:8px}
+
+  .eyebrow{display:inline-block;border-radius:9999px;background:rgba(255,255,255,.08);padding:.35rem .9rem;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#FFD23F}
+  .nav-link{transition:color .2s}.nav-link:hover{color:#FFD23F}
+
+  /* Botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:9999px;font-family:Fredoka,sans-serif;font-weight:600;font-size:1rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease,color .2s ease;cursor:pointer}
+  .btn:hover{transform:translateY(-2px) scale(1.03)}
+  .btn:active{transform:scale(.97)}
+  .btn-sun{background:#FFD23F;color:#0A0A0A}.btn-sun:hover{box-shadow:0 12px 30px -10px rgba(255,210,63,.7)}
+  .btn-wa{background:#25D366;color:#0A0A0A}.btn-wa:hover{box-shadow:0 12px 30px -10px rgba(37,211,102,.7)}
+  .btn-ghost{border:2px solid #333;color:#fff}.btn-ghost:hover{border-color:#FF5CA8;color:#FF5CA8}
+  .btn-dark{background:#0A0A0A;color:#fff}.btn-dark:hover{box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
+
+  /* Filtros */
+  .chip{display:inline-flex;align-items:center;padding:.4rem .9rem;border-radius:9999px;border:1.5px solid #2f2f2f;color:#d6d6d6;font-weight:700;font-size:.85rem;transition:all .2s ease;cursor:pointer}
+  .chip:hover{border-color:#FFD23F;color:#fff;transform:translateY(-1px)}
+  .chip[aria-pressed="true"]{background:#FFD23F;border-color:#FFD23F;color:#0A0A0A}
+  .swatch{width:2rem;height:2rem;border-radius:9999px;outline:2px solid transparent;outline-offset:3px;transition:transform .2s,outline-color .2s;cursor:pointer}
+  .swatch:hover{transform:scale(1.15)}
+  .swatch[aria-pressed="true"]{outline-color:#fff}
+
+  /* Cards */
+  .tile{display:flex;flex-direction:column;justify-content:space-between;border-radius:2rem;padding:1.25rem;color:#0A0A0A;font-family:Fredoka,sans-serif;font-weight:600;font-size:1.15rem;transition:transform .3s ease}
+  .tile i{font-size:2.2rem;transition:transform .3s ease}
+  .tile:hover{transform:translateY(-6px) rotate(-1.5deg)}
+  .tile:hover i{transform:scale(1.15) rotate(8deg)}
+  .age-card{border:1.5px solid #262626;background:#151515;border-radius:2rem;padding:1.5rem;transition:transform .3s ease,border-color .3s ease,background .3s}
+  .age-card:hover{transform:translateY(-6px);border-color:var(--c);background:#1a1a1a}
+  .age-card .arrow{transition:transform .25s}.age-card:hover .arrow{transform:translateX(6px)}
+
+  /* Animações */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(6deg)}}
+  .float{animation:float 6s ease-in-out infinite}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+  .marquee{animation:marquee 30s linear infinite}
+  .marquee-wrap:hover .marquee{animation-play-state:paused}
+  @keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+  .pop{animation:pop .35s ease both}
+  details summary{list-style:none;cursor:pointer}
+  details summary::-webkit-details-marker{display:none}
+  details .chev{transition:transform .3s}
+  details[open] .chev{transform:rotate(180deg)}
+  details[open] summary{color:#FFD23F}
+  .no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+
+<body class="bg-ink font-sans text-white antialiased">
+
+<!-- ============ BARRA DE AVISOS ============ -->
+<div class="marquee-wrap overflow-hidden bg-sun text-sm font-extrabold text-ink" aria-label="Avisos da loja">
+  <div id="marquee" class="marquee flex w-max whitespace-nowrap py-2"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-40 border-b border-line bg-ink/85 backdrop-blur">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+    <!-- Troque pelo logo oficial quando tiver -->
+    <a href="#home" class="group flex items-center gap-2" aria-label="Monalisa 10 Kids, início">
+      <span class="font-display text-2xl font-semibold tracking-tight">Monalisa</span>
+      <span class="grid h-9 w-9 place-items-center rounded-full bg-sun font-display text-lg font-bold text-ink transition duration-300 group-hover:rotate-[20deg] group-hover:scale-110">10</span>
+      <span class="font-display text-2xl font-semibold text-bubble">Kids</span>
+    </a>
+
+    <nav class="hidden items-center gap-7 text-sm font-bold lg:flex" aria-label="Principal">
+      <a data-nav="home" href="#home" class="nav-link">Início</a>
+      <a data-nav="loja" href="#loja" data-cat="" class="nav-link">Loja</a>
+      <a data-nav="guia" href="#guia" class="nav-link">Guia de tamanhos</a>
+      <a data-nav="quem-somos" href="#quem-somos" class="nav-link">Quem somos</a>
+      <a data-nav="ajuda" href="#ajuda" class="nav-link">Ajuda</a>
+      <a data-nav="contato" href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="#" data-wa="Olá! Vim pelo site da Monalisa 10 Kids e gostaria de atendimento." class="btn btn-wa hidden !py-2 text-sm sm:inline-flex">
+        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+      </a>
+      <button id="menu-btn" class="grid h-11 w-11 place-items-center rounded-full border border-line transition hover:border-sun lg:hidden" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="menu" class="hidden border-t border-line bg-ink lg:hidden">
+    <nav class="mx-auto flex max-w-7xl flex-col px-4 py-3 font-display text-lg" aria-label="Menu mobile">
+      <a href="#home" class="border-b border-line py-3">Início</a>
+      <a href="#loja" data-cat="" class="border-b border-line py-3">Loja</a>
+      <a href="#guia" class="border-b border-line py-3">Guia de tamanhos</a>
+      <a href="#quem-somos" class="border-b border-line py-3">Quem somos</a>
+      <a href="#ajuda" class="border-b border-line py-3">Ajuda</a>
+      <a href="#contato" class="py-3">Contato</a>
+      <a href="#" data-wa="Olá! Vim pelo site da Monalisa 10 Kids e gostaria de atendimento." class="btn btn-wa my-3"><i class="fa-brands fa-whatsapp text-lg"></i> Chamar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================================================= -->
+<!-- ====================== PÁGINA: INÍCIO ================= -->
+<!-- ======================================================= -->
+<div data-page="home">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-bubble/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-sky/20 blur-3xl"></div>
+
+    <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-24">
+      <div class="reveal">
+        <span class="eyebrow">Moda infantil · 0 a 12 anos</span>
+        <h1 class="mt-5 font-display text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-7xl">
+          Cor, conforto e muita <span class="text-sun">brincadeira</span> em cada look.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-white/70">
+          Roupas que acompanham cada descoberta: do dia a dia à festa, tudo pensado para o pequeno se mexer, pular e ser feliz.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#lancamentos" class="btn btn-sun">Ver lançamentos <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" data-wa="Olá! Vim pelo site da Monalisa 10 Kids e gostaria de atendimento." class="btn btn-ghost"><i class="fa-brands fa-whatsapp text-lg"></i> Chamar no WhatsApp</a>
+        </div>
+        <p class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-bold text-white/60">
+          <span><i class="fa-brands fa-pix mr-1 text-leaf"></i>Pix com desconto</span>
+          <span><i class="fa-solid fa-credit-card mr-1 text-sky"></i>Parcelamento no cartão</span>
+          <span><i class="fa-solid fa-store mr-1 text-tangerine"></i>Retirada na loja</span>
+        </p>
+      </div>
+
+      <!-- FOTO PRINCIPAL: substitua este mosaico por uma foto vertical de criança em movimento -->
+      <div class="reveal relative">
+        <div class="float absolute -left-6 top-10 h-20 w-20 rounded-full bg-sky"></div>
+        <div class="float absolute -right-3 -top-6 h-14 w-14 rotate-12 rounded-2xl bg-leaf" style="animation-delay:-2s"></div>
+        <div class="float absolute -bottom-5 left-1/3 h-10 w-10 rounded-full bg-tangerine" style="animation-delay:-4s"></div>
+        <div class="relative grid grid-cols-2 gap-4">
+          <a href="#loja" data-cat="vestidos" class="tile row-span-2 min-h-[18rem] bg-bubble">
+            <i class="fa-solid fa-child-dress"></i><span>Vestidos<br><small class="font-sans text-sm font-bold opacity-70">para girar e brilhar</small></span>
+          </a>
+          <a href="#loja" data-cat="conjuntos" class="tile min-h-[8.5rem] bg-sun"><i class="fa-solid fa-shirt"></i><span>Conjuntos</span></a>
+          <a href="#loja" data-cat="pijamas" class="tile min-h-[8.5rem] bg-sky"><i class="fa-solid fa-moon"></i><span>Pijamas</span></a>
+          <a href="#loja" data-cat="modapraia" class="tile col-span-2 min-h-[6.5rem] flex-row items-center bg-tangerine"><span>Moda praia</span><i class="fa-solid fa-umbrella-beach"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXAS ETÁRIAS -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display text-3xl font-bold sm:text-4xl">Qual é a idade da aventura?</h2>
+      <p class="mt-3 text-white/70">Escolha por fase e encontre o tamanho certo.</p>
+    </div>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <a href="#loja" data-age="enxoval" class="age-card reveal block" style="--c:#FF5CA8">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl text-2xl text-ink" style="background:var(--c)"><i class="fa-solid fa-baby-carriage"></i></span>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Enxoval</h3>
+        <p class="text-sm font-extrabold" style="color:var(--c)">Recém-nascido</p>
+        <p class="mt-2 text-sm text-white/60">Para receber o bebê com todo carinho.</p>
+        <p class="mt-5 text-sm font-extrabold">Ver peças <i class="fa-solid fa-arrow-right arrow ml-1"></i></p>
+      </a>
+      <a href="#loja" data-age="bebe" class="age-card reveal block" style="--c:#FFD23F">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl text-2xl text-ink" style="background:var(--c)"><i class="fa-solid fa-baby"></i></span>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Bebê</h3>
+        <p class="text-sm font-extrabold" style="color:var(--c)">0 a 24 meses</p>
+        <p class="mt-2 text-sm text-white/60">Macio, prático e fácil de vestir.</p>
+        <p class="mt-5 text-sm font-extrabold">Ver peças <i class="fa-solid fa-arrow-right arrow ml-1"></i></p>
+      </a>
+      <a href="#loja" data-age="infantil" class="age-card reveal block" style="--c:#3DA5FF">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl text-2xl text-ink" style="background:var(--c)"><i class="fa-solid fa-child"></i></span>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Infantil</h3>
+        <p class="text-sm font-extrabold" style="color:var(--c)">2 a 8 anos</p>
+        <p class="mt-2 text-sm text-white/60">Liberdade para correr, pular e inventar.</p>
+        <p class="mt-5 text-sm font-extrabold">Ver peças <i class="fa-solid fa-arrow-right arrow ml-1"></i></p>
+      </a>
+      <a href="#loja" data-age="juvenil" class="age-card reveal block" style="--c:#3DDC84">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl text-2xl text-ink" style="background:var(--c)"><i class="fa-solid fa-rocket"></i></span>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Juvenil</h3>
+        <p class="text-sm font-extrabold" style="color:var(--c)">10 a 12 anos</p>
+        <p class="mt-2 text-sm text-white/60">Estilo próprio, conforto de sempre.</p>
+        <p class="mt-5 text-sm font-extrabold">Ver peças <i class="fa-solid fa-arrow-right arrow ml-1"></i></p>
+      </a>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display text-3xl font-bold sm:text-4xl">Mais procuradas</h2>
+      <p class="mt-3 text-white/70">O que as famílias mais levam para casa.</p>
+    </div>
+    <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7">
+      <a href="#loja" data-cat="conjuntos" class="tile reveal min-h-[10rem] bg-sun text-base"><i class="fa-solid fa-shirt"></i><span>Conjuntos</span></a>
+      <a href="#loja" data-cat="vestidos" class="tile reveal min-h-[10rem] bg-bubble text-base"><i class="fa-solid fa-child-dress"></i><span>Vestidos</span></a>
+      <a href="#loja" data-cat="pijamas" class="tile reveal min-h-[10rem] bg-sky text-base"><i class="fa-solid fa-moon"></i><span>Pijamas</span></a>
+      <a href="#loja" data-cat="modapraia" class="tile reveal min-h-[10rem] bg-tangerine text-base"><i class="fa-solid fa-umbrella-beach"></i><span>Moda praia</span></a>
+      <a href="#loja" data-cat="calcados" class="tile reveal min-h-[10rem] bg-leaf text-base"><i class="fa-solid fa-shoe-prints"></i><span>Calçados</span></a>
+      <a href="#loja" data-cat="acessorios" class="tile reveal min-h-[10rem] bg-bubble text-base"><i class="fa-solid fa-glasses"></i><span>Acessórios</span></a>
+      <a href="#loja" data-cat="outlet" class="tile reveal min-h-[10rem] bg-sun text-base"><i class="fa-solid fa-tags"></i><span>Outlet</span></a>
+    </div>
+  </section>
+
+  <!-- LANÇAMENTOS (carrossel) -->
+  <section id="lancamentos" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6">
+    <div class="reveal flex flex-wrap items-end justify-between gap-4">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold sm:text-4xl">Acabou de chegar</h2>
+        <p class="mt-3 text-white/70">Novidades que acabaram de chegar à loja.</p>
+      </div>
+      <div class="flex gap-2">
+        <button id="car-prev" class="grid h-12 w-12 place-items-center rounded-full border border-line transition hover:border-sun hover:text-sun active:scale-90" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="car-next" class="grid h-12 w-12 place-items-center rounded-full border border-line transition hover:border-sun hover:text-sun active:scale-90" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div id="carousel" class="no-scrollbar mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2"></div>
+    <div class="mt-8 text-center">
+      <a href="#loja" data-cat="" class="btn btn-ghost">Ver todas as peças <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+    <h2 class="reveal max-w-2xl font-display text-3xl font-bold sm:text-4xl">Feito para o dia a dia do seu pequeno</h2>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sun/50">
+        <span class="grid h-12 w-12 place-items-center rounded-full bg-sun/15 text-xl text-sun"><i class="fa-solid fa-feather"></i></span>
+        <h3 class="mt-4 font-display text-xl font-semibold">Conforto de verdade</h3>
+        <p class="mt-2 text-sm text-white/60">Modelagens e tecidos pensados para o movimento de quem não para quieto.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-bubble/50">
+        <span class="grid h-12 w-12 place-items-center rounded-full bg-bubble/15 text-xl text-bubble"><i class="fa-solid fa-palette"></i></span>
+        <h3 class="mt-4 font-display text-xl font-semibold">Cores que alegram</h3>
+        <p class="mt-2 text-sm text-white/60">Uma paleta divertida para combinar, misturar e criar looks cheios de personalidade.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sky/50">
+        <span class="grid h-12 w-12 place-items-center rounded-full bg-sky/15 text-xl text-sky"><i class="fa-solid fa-gift"></i></span>
+        <h3 class="mt-4 font-display text-xl font-semibold">Do pijama à festa</h3>
+        <p class="mt-2 text-sm text-white/60">Opções para toda ocasião, num só lugar. Menos correria para você.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-leaf/50">
+        <span class="grid h-12 w-12 place-items-center rounded-full bg-leaf/15 text-xl text-leaf"><i class="fa-solid fa-comments"></i></span>
+        <h3 class="mt-4 font-display text-xl font-semibold">Atendimento de pertinho</h3>
+        <p class="mt-2 text-sm text-white/60">Dúvida de tamanho ou de combinação? A gente ajuda direto no WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER DE FESTA -->
+  <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <div class="reveal relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-bubble to-tangerine p-8 text-ink sm:p-14">
+      <div class="float absolute -right-10 -top-10 h-44 w-44 rounded-full bg-sun/80"></div>
+      <div class="float absolute bottom-6 right-24 h-14 w-14 rounded-2xl bg-sky/80" style="animation-delay:-3s"></div>
+      <div class="relative max-w-xl">
+        <span class="rounded-full bg-ink px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-sun">Moda festa</span>
+        <h2 class="mt-4 font-display text-3xl font-bold leading-tight sm:text-5xl">Convite de festa chegou? Calma, a gente resolve.</h2>
+        <p class="mt-4 text-lg font-bold text-ink/80">Vestidos, conjuntos e looks para brilhar do parabéns ao último brigadeiro.</p>
+        <a href="#loja" data-cat="vestidos" class="btn btn-dark mt-7">Ver looks de festa <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGAMENTO E RETIRADA -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+    <h2 class="reveal font-display text-3xl font-bold sm:text-4xl">Pague do seu jeito</h2>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:border-leaf/60">
+        <i class="fa-brands fa-pix text-3xl text-leaf"></i>
+        <div><p class="font-display text-lg font-semibold">Pix</p><p class="text-sm text-white/60"><span data-cfg="PIX_DISCOUNT"></span>% de desconto</p></div>
+      </div>
+      <div class="reveal flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:border-sky/60">
+        <i class="fa-solid fa-credit-card text-3xl text-sky"></i>
+        <div><p class="font-display text-lg font-semibold">Cartão de crédito</p><p class="text-sm text-white/60">Em até <span data-cfg="INSTALLMENTS"></span>x</p></div>
+      </div>
+      <div class="reveal flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:border-sun/60">
+        <i class="fa-solid fa-barcode text-3xl text-sun"></i>
+        <div><p class="font-display text-lg font-semibold">Boleto</p><p class="text-sm text-white/60">Pague no banco ou app</p></div>
+      </div>
+      <div class="reveal flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:border-tangerine/60">
+        <i class="fa-solid fa-store text-3xl text-tangerine"></i>
+        <div><p class="font-display text-lg font-semibold">Retire na loja</p><p class="text-sm text-white/60">Sem custo de frete</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <!-- ATENÇÃO: textos de EXEMPLO. Troque por depoimentos reais (com autorização) antes de publicar. -->
+  <section id="depoimentos" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6">
+    <h2 class="reveal font-display text-3xl font-bold sm:text-4xl">Quem veste, ama</h2>
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+      <figure class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sun/50">
+        <div class="text-sun"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote class="mt-4 text-white/80">“Peças confortáveis e cheias de cor. Minha filha escolhe a roupa sozinha e quer usar todo dia!”</blockquote>
+        <figcaption class="mt-5 text-sm font-extrabold">Mãe da Helena <span class="font-semibold text-white/50">· 6 anos</span></figcaption>
+      </figure>
+      <figure class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-bubble/50">
+        <div class="text-sun"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote class="mt-4 text-white/80">“Fiquei em dúvida no tamanho e a equipe me ajudou pelo WhatsApp rapidinho. Atendimento nota 10.”</blockquote>
+        <figcaption class="mt-5 text-sm font-extrabold">Pai do Miguel <span class="font-semibold text-white/50">· 2 anos</span></figcaption>
+      </figure>
+      <figure class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sky/50">
+        <div class="text-sun"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote class="mt-4 text-white/80">“Resolvi o look da festa de aniversário em uma única visita. Voltarei com certeza.”</blockquote>
+        <figcaption class="mt-5 text-sm font-extrabold">Mãe da Alice <span class="font-semibold text-white/50">· 4 anos</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- REDES SOCIAIS -->
+  <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <div class="reveal rounded-[2.5rem] border border-line bg-card p-8 text-center sm:p-12">
+      <h2 class="font-display text-3xl font-bold sm:text-4xl">Vem com a gente</h2>
+      <p class="mx-auto mt-3 max-w-md text-white/70">Lançamentos, bastidores e inspirações de looks.</p>
+      <div class="mt-7 flex flex-wrap justify-center gap-3">
+        <a data-social="instagram" href="#" class="btn btn-ghost"><i class="fa-brands fa-instagram text-lg"></i> Instagram</a>
+        <a data-social="tiktok" href="#" class="btn btn-ghost"><i class="fa-brands fa-tiktok text-lg"></i> TikTok</a>
+        <a data-social="facebook" href="#" class="btn btn-ghost"><i class="fa-brands fa-facebook-f text-lg"></i> Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:px-6">
+    <div class="reveal rounded-[2.5rem] bg-sun p-8 text-center text-ink sm:p-14">
+      <h2 class="mx-auto max-w-2xl font-display text-3xl font-bold leading-tight sm:text-5xl">Ficou na dúvida do tamanho? Fala com a gente.</h2>
+      <p class="mt-3 font-bold text-ink/70">Respondemos com carinho e sem pressa.</p>
+      <div class="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="#" data-wa="Olá! Estou com dúvida de tamanho e gostaria de ajuda." class="btn btn-dark"><i class="fa-brands fa-whatsapp text-lg text-[#25D366]"></i> Chamar no WhatsApp</a>
+        <a href="#guia" class="btn border-2 border-ink text-ink hover:bg-ink hover:text-sun">Ver guia de tamanhos</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= -->
+<!-- ====================== PÁGINA: LOJA =================== -->
+<!-- ======================================================= -->
+<div data-page="loja" class="hidden">
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-4xl font-bold sm:text-5xl">Todas as <span class="text-sun">peças</span></h1>
+    <p class="mt-3 max-w-xl text-white/70">Filtre por idade, categoria, tamanho, cor e preço e encontre o look ideal.</p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-y border-line py-4">
+      <div class="flex items-center gap-3">
+        <button id="filters-btn" class="btn btn-ghost !px-4 !py-2 text-sm lg:hidden"><i class="fa-solid fa-sliders"></i> Filtros</button>
+        <p id="count" class="text-sm font-extrabold text-white/60"></p>
+      </div>
+      <label class="flex items-center gap-2 text-sm font-bold text-white/60">Ordenar
+        <select id="sort" class="rounded-full border border-line bg-card px-4 py-2 text-white">
+          <option value="rel">Relevância</option>
+          <option value="new">Lançamentos</option>
+          <option value="asc">Menor preço</option>
+          <option value="desc">Maior preço</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="mt-8 grid gap-8 lg:grid-cols-[270px_1fr]">
+      <!-- FILTROS -->
+      <aside id="filters" class="hidden space-y-7 lg:block" aria-label="Filtros">
+        <div><h3 class="mb-3 font-display text-lg font-semibold">Faixa etária</h3><div id="f-age" class="flex flex-wrap gap-2"></div></div>
+        <div><h3 class="mb-3 font-display text-lg font-semibold">Categoria</h3><div id="f-cat" class="flex flex-wrap gap-2"></div></div>
+        <div>
+          <h3 class="mb-3 font-display text-lg font-semibold">Tamanho</h3>
+          <p class="mb-2 text-xs font-bold uppercase tracking-wider text-white/40">Roupas</p>
+          <div id="f-size" class="flex flex-wrap gap-2"></div>
+          <p class="mb-2 mt-4 text-xs font-bold uppercase tracking-wider text-white/40">Calçados (nº)</p>
+          <div id="f-shoe" class="flex flex-wrap gap-2"></div>
+          <a href="#guia" class="mt-3 inline-block text-sm font-bold text-sun hover:underline"><i class="fa-solid fa-ruler mr-1"></i>Guia de tamanhos</a>
+        </div>
+        <div><h3 class="mb-3 font-display text-lg font-semibold">Cor</h3><div id="f-color" class="flex flex-wrap gap-3"></div></div>
+        <div>
+          <h3 class="mb-3 font-display text-lg font-semibold">Preço <span id="price-label" class="ml-1 text-sm font-bold text-sun"></span></h3>
+          <input id="f-price" type="range" min="40" max="300" step="10" value="300" class="w-full accent-sun" aria-label="Preço máximo">
+        </div>
+        <button id="clear" class="btn btn-ghost w-full !py-2 text-sm"><i class="fa-solid fa-xmark"></i> Limpar filtros</button>
+      </aside>
+
+      <!-- PRODUTOS -->
+      <div>
+        <div id="grid" class="grid grid-cols-2 gap-4 md:grid-cols-3"></div>
+        <div id="empty" class="hidden rounded-3xl border border-dashed border-line p-12 text-center">
+          <i class="fa-solid fa-face-smile-wink text-4xl text-sun"></i>
+          <h3 class="mt-4 font-display text-2xl font-semibold">Nenhuma peça por aqui… ainda!</h3>
+          <p class="mt-2 text-white/60">Tente remover alguns filtros ou chame a gente no WhatsApp.</p>
+          <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <button id="clear2" class="btn btn-sun">Limpar filtros</button>
+            <a href="#" data-wa="Olá! Não encontrei o que procurava no site. Podem me ajudar?" class="btn btn-wa"><i class="fa-brands fa-whatsapp text-lg"></i> Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= -->
+<!-- ================= PÁGINA: GUIA DE TAMANHOS ============ -->
+<!-- ======================================================= -->
+<div data-page="guia" class="hidden">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-4xl font-bold sm:text-5xl">Acertar o tamanho é <span class="text-sun">simples</span></h1>
+    <p class="mt-3 max-w-xl text-white/70">Meça, compare e, se bater a dúvida, chame a gente.</p>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-3">
+      <div class="reveal rounded-3xl bg-sun p-6 text-ink"><span class="font-display text-4xl font-bold">1</span><h3 class="mt-2 font-display text-xl font-semibold">Altura</h3><p class="text-sm font-bold text-ink/70">Com a criança descalça e em pé, encostada na parede, meça da cabeça aos pés.</p></div>
+      <div class="reveal rounded-3xl bg-bubble p-6 text-ink"><span class="font-display text-4xl font-bold">2</span><h3 class="mt-2 font-display text-xl font-semibold">Tórax</h3><p class="text-sm font-bold text-ink/70">Passe a fita ao redor do peito, na altura das axilas, sem apertar.</p></div>
+      <div class="reveal rounded-3xl bg-sky p-6 text-ink"><span class="font-display text-4xl font-bold">3</span><h3 class="mt-2 font-display text-xl font-semibold">Cintura</h3><p class="text-sm font-bold text-ink/70">Meça na parte mais fina do tronco, logo acima do umbigo.</p></div>
+    </div>
+
+    <div id="size-tables" class="mt-10 space-y-6"></div>
+
+    <p class="mt-6 rounded-2xl border border-line bg-card p-4 text-sm text-white/70">
+      <i class="fa-solid fa-lightbulb mr-2 text-sun"></i>Medidas de referência. Podem variar um pouco conforme a modelagem de cada peça. Na dúvida entre dois tamanhos, escolha o maior: criança cresce rápido.
+    </p>
+    <div class="mt-8 text-center">
+      <a href="#" data-wa="Olá! Preciso de ajuda para escolher o tamanho." class="btn btn-wa"><i class="fa-brands fa-whatsapp text-lg"></i> Pedir ajuda no WhatsApp</a>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= -->
+<!-- ================== PÁGINA: QUEM SOMOS ================= -->
+<!-- ======================================================= -->
+<div data-page="quem-somos" class="hidden">
+  <section class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-14 sm:px-6 lg:grid-cols-2">
+    <div>
+      <span class="eyebrow">Quem somos</span>
+      <h1 class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl">Vestir criança é cuidar de quem a gente <span class="text-bubble">mais ama</span>.</h1>
+      <!-- Adapte com a história real da marca (fundadora, ano, motivação) -->
+      <p class="mt-6 text-lg text-white/70">A Monalisa 10 Kids nasceu do desejo de vestir bebês e crianças com conforto, cor e alegria. Acreditamos que roupa boa é aquela que deixa o pequeno livre para brincar, descobrir e ser quem ele é.</p>
+      <p class="mt-4 text-white/70">Cada peça é escolhida com olhar de família: pensando na rotina corrida dos pais e no mundo cheio de aventuras das crianças, do enxoval ao look de festa.</p>
+      <a href="#loja" data-cat="" class="btn btn-sun mt-8">Conheça a coleção <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <!-- FOTO: loja ou equipe -->
+    <div class="relative grid min-h-[22rem] place-items-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-sun via-tangerine to-bubble text-ink">
+      <div class="float absolute left-8 top-8 h-16 w-16 rounded-full bg-sky"></div>
+      <div class="float absolute bottom-10 right-10 h-20 w-20 rotate-12 rounded-3xl bg-leaf" style="animation-delay:-2s"></div>
+      <p class="relative text-center font-display text-3xl font-bold leading-tight">Foto da loja<br>e da equipe</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <h2 class="reveal font-display text-3xl font-bold">Nossos valores</h2>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sun/50"><i class="fa-solid fa-feather text-2xl text-sun"></i><h3 class="mt-4 font-display text-xl font-semibold">Conforto</h3><p class="mt-2 text-sm text-white/60">Roupa boa é a que não atrapalha a brincadeira.</p></div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-bubble/50"><i class="fa-solid fa-face-smile text-2xl text-bubble"></i><h3 class="mt-4 font-display text-xl font-semibold">Alegria</h3><p class="mt-2 text-sm text-white/60">Cor, leveza e diversão em cada detalhe.</p></div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-sky/50"><i class="fa-solid fa-hand-holding-heart text-2xl text-sky"></i><h3 class="mt-4 font-display text-xl font-semibold">Cuidado</h3><p class="mt-2 text-sm text-white/60">Olhar atento a acabamento, tecido e bem-estar.</p></div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6 transition hover:-translate-y-1 hover:border-leaf/50"><i class="fa-solid fa-comments text-2xl text-leaf"></i><h3 class="mt-4 font-display text-xl font-semibold">Proximidade</h3><p class="mt-2 text-sm text-white/60">Atendimento humano, de pai e mãe para pai e mãe.</p></div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 pb-20 pt-6 sm:px-6">
+    <div class="reveal rounded-[2.5rem] border border-line bg-card p-8 sm:p-12">
+      <h2 class="font-display text-3xl font-bold">Nosso compromisso com o bem-estar infantil</h2>
+      <p class="mt-4 max-w-3xl text-white/70">Escolhemos peças pensando em quem vai vestir: liberdade de movimento, toque agradável e acabamento cuidadoso. Porque o dia da criança é feito de correr, sentar no chão, pular e se sujar, e a roupa precisa acompanhar tudo isso.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= -->
+<!-- ===================== PÁGINA: AJUDA =================== -->
+<!-- ======================================================= -->
+<div data-page="ajuda" class="hidden">
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-4xl font-bold sm:text-5xl">Políticas e <span class="text-sun">ajuda</span></h1>
+    <p class="mt-3 text-white/70">Tudo o que você precisa saber para comprar com tranquilidade.</p>
+
+    <!-- Textos-modelo: ajuste prazos e revise com um profissional jurídico antes de publicar -->
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+      <div class="reveal rounded-3xl border border-line bg-card p-6">
+        <i class="fa-solid fa-store text-2xl text-tangerine"></i>
+        <h2 class="mt-4 font-display text-xl font-semibold">Retirada no local</h2>
+        <p class="mt-2 text-sm text-white/60">No momento, trabalhamos apenas com retirada na loja, sem custo de frete. Assim que o pedido estiver separado, avisamos você pelo WhatsApp.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6">
+        <i class="fa-solid fa-rotate text-2xl text-sky"></i>
+        <h2 class="mt-4 font-display text-xl font-semibold">Trocas e devoluções</h2>
+        <p class="mt-2 text-sm text-white/60">Trocas em até 7 dias corridos após a retirada, com etiqueta e sem sinais de uso. Em compras feitas à distância, vale também o direito de arrependimento previsto no Código de Defesa do Consumidor.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-line bg-card p-6">
+        <i class="fa-solid fa-shield-heart text-2xl text-leaf"></i>
+        <h2 class="mt-4 font-display text-xl font-semibold">Privacidade</h2>
+        <p class="mt-2 text-sm text-white/60">Usamos seu nome, telefone e e-mail apenas para atendimento e pedidos, conforme a LGPD. Não vendemos nem compartilhamos seus dados. Para remover seus dados, é só pedir.</p>
+      </div>
+    </div>
+
+    <h2 class="mt-14 font-display text-3xl font-bold">Perguntas frequentes</h2>
+    <div id="faq" class="mt-6 space-y-3"></div>
+
+    <div class="mt-10 text-center">
+      <p class="text-white/70">Não encontrou o que procurava?</p>
+      <a href="#" data-wa="Olá! Tenho uma dúvida." class="btn btn-wa mt-4"><i class="fa-brands fa-whatsapp text-lg"></i> Falar com a gente</a>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= -->
+<!-- ==================== PÁGINA: CONTATO ================== -->
+<!-- ======================================================= -->
+<div data-page="contato" class="hidden">
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-4xl font-bold sm:text-5xl">Vamos <span class="text-sun">conversar?</span></h1>
+    <p class="mt-3 max-w-xl text-white/70">Dúvidas, encomendas ou sugestões? Respondemos com carinho.</p>
+
+    <div class="mt-10 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+      <form id="contact-form" class="space-y-4 rounded-3xl border border-line bg-card p-6 sm:p-8">
+        <div>
+          <label for="nome" class="mb-1 block text-sm font-extrabold">Seu nome</label>
+          <input id="nome" name="nome" required class="w-full rounded-2xl border border-line bg-ink px-4 py-3 outline-none transition focus:border-sun" placeholder="Como podemos te chamar?">
+        </div>
+        <div>
+          <label for="email" class="mb-1 block text-sm font-extrabold">E-mail</label>
+          <input id="email" name="email" type="email" required class="w-full rounded-2xl border border-line bg-ink px-4 py-3 outline-none transition focus:border-sun" placeholder="voce@email.com">
+        </div>
+        <div>
+          <label for="mensagem" class="mb-1 block text-sm font-extrabold">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required class="w-full rounded-2xl border border-line bg-ink px-4 py-3 outline-none transition focus:border-sun" placeholder="Conte como podemos ajudar…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-sun w-full"><i class="fa-brands fa-whatsapp text-lg"></i> Enviar pelo WhatsApp</button>
+        <p class="text-center text-xs text-white/50">Ao enviar, abrimos o WhatsApp com sua mensagem pronta.</p>
+        <p id="form-ok" class="hidden rounded-2xl bg-leaf/15 p-3 text-center text-sm font-bold text-leaf">Pronto! Continue a conversa no WhatsApp. 💛</p>
+      </form>
+
+      <div class="space-y-4">
+        <a href="#" data-wa="Olá! Gostaria de atendimento." class="flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:-translate-y-1 hover:border-[#25D366]">
+          <i class="fa-brands fa-whatsapp text-3xl text-[#25D366]"></i>
+          <div><p class="font-display text-lg font-semibold">WhatsApp</p><p class="text-sm text-white/60" data-cfg="WHATSAPP_VIEW"></p></div>
+        </a>
+        <a data-mail href="#" class="flex items-center gap-4 rounded-3xl border border-line bg-card p-5 transition hover:-translate-y-1 hover:border-sky">
+          <i class="fa-solid fa-envelope text-3xl text-sky"></i>
+          <div><p class="font-display text-lg font-semibold">E-mail</p><p class="break-all text-sm text-white/60" data-cfg="EMAIL"></p></div>
+        </a>
+        <div class="flex items-center gap-4 rounded-3xl border border-line bg-card p-5">
+          <i class="fa-solid fa-location-dot text-3xl text-bubble"></i>
+          <div><p class="font-display text-lg font-semibold">Endereço</p><p class="text-sm text-white/60" data-cfg="ADDRESS"></p></div>
+        </div>
+        <div class="flex items-center gap-4 rounded-3xl border border-line bg-card p-5">
+          <i class="fa-solid fa-clock text-3xl text-sun"></i>
+          <div><p class="font-display text-lg font-semibold">Horário</p><p class="text-sm text-white/60" data-cfg="HOURS"></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-line bg-[#0d0d0d]">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <p class="flex items-center gap-2 font-display text-2xl font-semibold">Monalisa <span class="grid h-8 w-8 place-items-center rounded-full bg-sun text-base font-bold text-ink">10</span> <span class="text-bubble">Kids</span></p>
+      <p class="mt-4 text-sm text-white/60">Moda infantil com cor, conforto e alegria, de 0 a 12 anos.</p>
+      <div class="mt-5 flex gap-3">
+        <a data-social="instagram" href="#" aria-label="Instagram" class="grid h-11 w-11 place-items-center rounded-full border border-line transition hover:-translate-y-1 hover:border-bubble hover:text-bubble"><i class="fa-brands fa-instagram"></i></a>
+        <a data-social="tiktok" href="#" aria-label="TikTok" class="grid h-11 w-11 place-items-center rounded-full border border-line transition hover:-translate-y-1 hover:border-sky hover:text-sky"><i class="fa-brands fa-tiktok"></i></a>
+        <a data-social="facebook" href="#" aria-label="Facebook" class="grid h-11 w-11 place-items-center rounded-full border border-line transition hover:-translate-y-1 hover:border-sun hover:text-sun"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-display text-lg font-semibold">Loja</h3>
+      <ul class="mt-4 space-y-2 text-sm text-white/60">
+        <li><a class="transition hover:text-sun" href="#loja" data-cat="conjuntos">Conjuntos</a></li>
+        <li><a class="transition hover:text-sun" href="#loja" data-cat="vestidos">Vestidos</a></li>
+        <li><a class="transition hover:text-sun" href="#loja" data-cat="pijamas">Pijamas</a></li>
+        <li><a class="transition hover:text-sun" href="#loja" data-cat="calcados">Calçados</a></li>
+        <li><a class="transition hover:text-sun" href="#loja" data-cat="outlet">Outlet</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display text-lg font-semibold">Ajuda</h3>
+      <ul class="mt-4 space-y-2 text-sm text-white/60">
+        <li><a class="transition hover:text-sun" href="#guia">Guia de tamanhos</a></li>
+        <li><a class="transition hover:text-sun" href="#ajuda">Trocas e devoluções</a></li>
+        <li><a class="transition hover:text-sun" href="#ajuda">Retirada no local</a></li>
+        <li><a class="transition hover:text-sun" href="#ajuda">Privacidade</a></li>
+        <li><a class="transition hover:text-sun" href="#quem-somos">Quem somos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display text-lg font-semibold">Contato</h3>
+      <ul class="mt-4 space-y-2 text-sm text-white/60">
+        <li><i class="fa-brands fa-whatsapp mr-2 text-[#25D366]"></i><span data-cfg="WHATSAPP_VIEW"></span></li>
+        <li><i class="fa-solid fa-envelope mr-2 text-sky"></i><span data-cfg="EMAIL"></span></li>
+        <li><i class="fa-solid fa-location-dot mr-2 text-bubble"></i><span data-cfg="ADDRESS"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-white/40 sm:flex-row sm:px-6">
+      <p>© <span id="year"></span> Monalisa 10 Kids · CNPJ <span data-cfg="CNPJ"></span></p>
+      <p class="flex items-center gap-3 text-lg"><i class="fa-brands fa-pix" title="Pix"></i><i class="fa-solid fa-credit-card" title="Cartão"></i><i class="fa-solid fa-barcode" title="Boleto"></i></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a href="#" data-wa="Olá! Vim pelo site da Monalisa 10 Kids e gostaria de atendimento." aria-label="Falar no WhatsApp"
+   class="group fixed bottom-5 right-5 z-50 flex items-center gap-3">
+  <span class="pointer-events-none hidden translate-x-2 rounded-full bg-white px-4 py-2 text-sm font-extrabold text-ink opacity-0 shadow-lg transition duration-300 group-hover:translate-x-0 group-hover:opacity-100 sm:block">Fale com a gente</span>
+  <span class="relative grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-3xl text-ink shadow-xl shadow-black/40 transition duration-300 group-hover:scale-110">
+    <span class="absolute inset-0 animate-ping rounded-full bg-[#25D366] opacity-30"></span>
+    <i class="fa-brands fa-whatsapp relative"></i>
+  </span>
+</a>
+
+<script>
+/* =====================================================
+   CONFIGURAÇÃO: edite apenas este bloco
+   ===================================================== */
+const CONFIG = {
+  WHATSAPP: '5547997866782',          // DDI + DDD + número (somente dígitos)
+  WHATSAPP_VIEW: '(47) 99786-6782',
+  EMAIL: 'contato@exemplo.com.br',
+  CNPJ: '00.000.000/0000-00',
+  ADDRESS: 'Rua Exemplo, 000 · Bairro · Cidade/UF',
+  HOURS: 'Seg a Sex, 9h às 18h · Sáb, 9h às 13h',
+  PIX_DISCOUNT: 5,                    // % de desconto no Pix
+  INSTALLMENTS: 3,                    // parcelas no cartão (confirme se é sem juros)
+  SOCIAL: {
+    instagram: 'https://www.instagram.com/',
+    tiktok: 'https://www.tiktok.com/',
+    facebook: 'https://www.facebook.com/'
+  }
+};
+
+/* =====================================================
+   DADOS (produtos de EXEMPLO, troque pelos reais)
+   Para usar foto real: adicione img:'caminho/foto.jpg' ao produto
+   ===================================================== */
+const COLORS = { amarelo:'#FFD23F', laranja:'#FF8A3D', azul:'#3DA5FF', verde:'#3DDC84', rosa:'#FF5CA8' };
+const AGES = { enxoval:'Enxoval', bebe:'Bebê', infantil:'Infantil', juvenil:'Juvenil' };
+const CATS = { conjuntos:'Conjuntos', vestidos:'Vestidos', pijamas:'Pijamas', modapraia:'Moda praia', calcados:'Calçados', acessorios:'Acessórios', outlet:'Outlet' };
+const SIZES = ['RN','P','M','G','1','2','3','4','6','8','10','12','U'];
+const SHOES = ['n18','n20','n22','n24','n26','n28','n30'];
+const P = (id,name,cat,age,sizes,colors,price,isNew,icon,img) => ({id,name,cat,age,sizes,colors,price,isNew,icon,img});
+const PRODUCTS = [
+  P(1,'Conjunto Arco-íris','conjuntos','infantil',['2','3','4','6'],['amarelo','azul'],129.9,true,'fa-shirt'),
+  P(2,'Vestido Margarida','vestidos','infantil',['2','3','4','6','8'],['rosa','amarelo'],119.9,true,'fa-child-dress'),
+  P(3,'Pijama Estrelinhas','pijamas','bebe',['P','M','G','1'],['azul','amarelo'],89.9,true,'fa-moon'),
+  P(4,'Macacão Soneca','conjuntos','enxoval',['RN','P','M'],['verde','amarelo'],99.9,true,'fa-baby'),
+  P(5,'Maiô Fundo do Mar','modapraia','infantil',['2','4','6','8'],['azul','laranja'],109.9,false,'fa-umbrella-beach'),
+  P(6,'Tênis Pula-Poça','calcados','infantil',['n22','n24','n26','n28'],['laranja','verde'],149.9,true,'fa-shoe-prints'),
+  P(7,'Vestido Festa Confete','vestidos','infantil',['4','6','8'],['rosa','laranja'],189.9,false,'fa-cake-candles'),
+  P(8,'Conjunto Jardim','conjuntos','juvenil',['10','12'],['verde','azul'],159.9,false,'fa-shirt'),
+  P(9,'Pijama Dino','pijamas','infantil',['2','3','4','6','8'],['verde','azul'],94.9,false,'fa-moon'),
+  P(10,'Kit Body Docinho (3 peças)','conjuntos','enxoval',['RN','P','M'],['amarelo','rosa','azul'],79.9,true,'fa-baby'),
+  P(11,'Kit Laço e Tiara','acessorios','bebe',['U'],['rosa','amarelo'],39.9,false,'fa-ribbon'),
+  P(12,'Chapéu de Sol','acessorios','infantil',['U'],['laranja','azul'],49.9,true,'fa-sun'),
+  P(13,'Bermuda Praia','outlet','juvenil',['10','12'],['azul','verde'],59.9,false,'fa-tags'),
+  P(14,'Conjunto Mini Craque','outlet','bebe',['M','G','1','2'],['laranja','verde'],69.9,false,'fa-tags'),
+  P(15,'Sandália Florzinha','calcados','bebe',['n18','n20','n22'],['rosa','amarelo'],89.9,false,'fa-shoe-prints'),
+  P(16,'Vestido Dia de Sol','vestidos','bebe',['P','M','G','1','2'],['amarelo','laranja'],99.9,true,'fa-child-dress')
+];
+
+const SIZE_TABLES = [
+  { title:'Bebê e enxoval', color:'#FFD23F', rows:[
+    ['RN','0–1 mês','até 55','38','38'], ['P','1–3 meses','56–62','40','40'],
+    ['M','3–6 meses','63–68','42','41'], ['G','6–12 meses','69–76','44','43'] ]},
+  { title:'Infantil · 2 a 8 anos', color:'#3DA5FF', rows:[
+    ['1','1 ano','77–82','46','46'], ['2','2 anos','83–92','50','48'], ['3','3 anos','93–98','52','50'],
+    ['4','4 anos','99–104','54','51'], ['6','6 anos','105–116','58','53'], ['8','8 anos','117–128','62','56'] ]},
+  { title:'Juvenil · 10 a 12 anos', color:'#3DDC84', rows:[
+    ['10','10 anos','129–140','66','58'], ['12','12 anos','141–152','70','61'] ]}
+];
+
+const FAQ = [
+  ['Como faço meu pedido?','Escolha as peças no site e toque em “Pedir no WhatsApp”. Nossa equipe confirma disponibilidade, tamanho e forma de pagamento com você.'],
+  ['Quais são as formas de pagamento?',`Pix com ${CONFIG.PIX_DISCOUNT}% de desconto, cartão de crédito em até ${CONFIG.INSTALLMENTS}x e boleto.`],
+  ['Como funciona a retirada?','No momento, trabalhamos com retirada no local. Assim que o pedido estiver separado, avisamos você pelo WhatsApp.'],
+  ['Vocês entregam?','Por enquanto não. Nosso atendimento é com retirada na loja, sem custo de frete.'],
+  ['Posso trocar se não servir?','Pode sim. A troca é feita em até 7 dias corridos após a retirada, com etiqueta e sem sinais de uso.'],
+  ['Como escolho o tamanho certo?','Consulte o Guia de tamanhos ou chame a gente no WhatsApp. Na dúvida entre dois tamanhos, escolha o maior.']
+];
+
+/* =====================================================
+   HELPERS
+   ===================================================== */
+const $ = s => document.querySelector(s);
+const BRL = v => v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const wa = text => `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(text)}`;
+const sizeLabel = s => s==='U' ? 'Único' : s.startsWith('n') ? s.slice(1) : s;
+
+function bindLinks(root=document){
+  root.querySelectorAll('[data-wa]').forEach(a=>{ a.href = wa(a.dataset.wa); a.target='_blank'; a.rel='noopener'; });
+}
+document.querySelectorAll('[data-cfg]').forEach(el => el.textContent = CONFIG[el.dataset.cfg]);
+document.querySelectorAll('[data-social]').forEach(a => { a.href = CONFIG.SOCIAL[a.dataset.social]; a.target='_blank'; a.rel='noopener'; });
+document.querySelectorAll('[data-mail]').forEach(a => a.href = 'mailto:' + CONFIG.EMAIL);
+$('#year').textContent = new Date().getFullYear();
+
+/* Marquee (conteúdo duplicado para loop contínuo) */
+const msgs = [`Pix com ${CONFIG.PIX_DISCOUNT}% de desconto`, `Cartão em até ${CONFIG.INSTALLMENTS}x`, 'Retirada na loja', 'Moda infantil de 0 a 12 anos'];
+const row = msgs.map(m=>`<span class="inline-flex items-center gap-10 pr-10">${m}<i class="fa-solid fa-star text-[10px]"></i></span>`).join('');
+$('#marquee').innerHTML = row + row + row + row;
+
+/* =====================================================
+   CARD DE PRODUTO
+   ===================================================== */
+function card(p){
+  const [c1,c2] = p.colors.map(c=>COLORS[c]);
+  const pix = p.price * (1 - CONFIG.PIX_DISCOUNT/100);
+  const badge = p.cat==='outlet' ? 'Outlet' : p.isNew ? 'Novo' : '';
+  const msg = `Olá! Tenho interesse em: ${p.name} (${AGES[p.age]}). Pode me ajudar?`.replace(/"/g,'&quot;');
+  const visual = p.img
+    ? `<img src="${p.img}" alt="${p.name}" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">`
+    : `<i class="fa-solid ${p.icon} text-6xl text-ink/80 transition duration-300 group-hover:-rotate-6 group-hover:scale-110"></i>`;
+  return `
+  <article class="group h-full overflow-hidden rounded-3xl border border-line bg-card transition duration-300 hover:-translate-y-1.5 hover:border-white/30 hover:shadow-2xl hover:shadow-black/60">
+    <div class="relative grid aspect-[4/5] place-items-center overflow-hidden" style="background:linear-gradient(135deg,${c1},${c2||c1})">
+      ${visual}
+      ${badge ? `<span class="absolute left-3 top-3 rounded-full bg-ink px-3 py-1 text-xs font-extrabold text-sun">${badge}</span>` : ''}
+    </div>
+    <div class="p-4">
+      <p class="text-[11px] font-extrabold uppercase tracking-wider text-white/40">${CATS[p.cat]} · ${AGES[p.age]}</p>
+      <h3 class="mt-1 font-display text-lg font-semibold leading-snug">${p.name}</h3>
+      <div class="mt-2 flex items-center gap-1.5">${p.colors.map(c=>`<span class="h-3.5 w-3.5 rounded-full ring-1 ring-white/25" style="background:${COLORS[c]}" title="${c}"></span>`).join('')}</div>
+      <p class="mt-3 font-display text-xl font-semibold text-sun">${BRL(pix)} <span class="font-sans text-xs font-bold text-white/50">no Pix</span></p>
+      <p class="text-xs text-white/50">${BRL(p.price)} ou ${CONFIG.INSTALLMENTS}x de ${BRL(p.price/CONFIG.INSTALLMENTS)}</p>
+      <a href="#" data-wa="${msg}" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-sm font-extrabold transition hover:bg-[#25D366] hover:text-ink active:scale-95">
+        <i class="fa-brands fa-whatsapp"></i> Pedir no WhatsApp
+      </a>
+    </div>
+  </article>`;
+}
+
+/* Carrossel de lançamentos */
+const car = $('#carousel');
+car.innerHTML = PRODUCTS.filter(p=>p.isNew).map(p=>`<div class="w-[72%] shrink-0 snap-start sm:w-[44%] lg:w-[23.5%]">${card(p)}</div>`).join('');
+$('#car-prev').onclick = () => car.scrollBy({left:-car.clientWidth*0.8, behavior:'smooth'});
+$('#car-next').onclick = () => car.scrollBy({left: car.clientWidth*0.8, behavior:'smooth'});
+
+/* =====================================================
+   LOJA: FILTROS
+   ===================================================== */
+const state = { age:'', cat:'', size:'', color:'', max:300, sort:'rel' };
+const chip = (k,v,l) => `<button type="button" class="chip" data-f="${k}" data-v="${v}" aria-pressed="false">${l}</button>`;
+$('#f-age').innerHTML  = Object.entries(AGES).map(([v,l])=>chip('age',v,l)).join('');
+$('#f-cat').innerHTML  = Object.entries(CATS).map(([v,l])=>chip('cat',v,l)).join('');
+$('#f-size').innerHTML = SIZES.map(s=>chip('size',s,sizeLabel(s))).join('');
+$('#f-shoe').innerHTML = SHOES.map(s=>chip('size',s,sizeLabel(s))).join('');
+$('#f-color').innerHTML = Object.entries(COLORS).map(([k,h])=>`<button type="button" class="swatch" data-f="color" data-v="${k}" style="background:${h}" aria-label="${k}" title="${k}" aria-pressed="false"></button>`).join('');
+
+function syncUI(){
+  document.querySelectorAll('[data-f]').forEach(b => b.setAttribute('aria-pressed', state[b.dataset.f]===b.dataset.v));
+  $('#f-price').value = state.max;
+  $('#price-label').textContent = state.max>=300 ? '' : `até ${BRL(state.max)}`;
+  $('#sort').value = state.sort;
+}
+function renderGrid(){
+  let list = PRODUCTS.filter(p =>
+    (!state.age   || p.age===state.age) && (!state.cat || p.cat===state.cat) &&
+    (!state.size  || p.sizes.includes(state.size)) && (!state.color || p.colors.includes(state.color)) &&
+    p.price <= state.max);
+  if(state.sort==='asc')  list.sort((a,b)=>a.price-b.price);
+  if(state.sort==='desc') list.sort((a,b)=>b.price-a.price);
+  if(state.sort==='new')  list.sort((a,b)=>Number(b.isNew)-Number(a.isNew));
+  $('#grid').innerHTML = list.map(p=>`<div class="pop">${card(p)}</div>`).join('');
+  $('#count').textContent = `${list.length} ${list.length===1?'peça':'peças'}`;
+  $('#empty').classList.toggle('hidden', list.length>0);
+  bindLinks($('#grid'));
+}
+function clearFilters(){ Object.assign(state,{age:'',cat:'',size:'',color:'',max:300}); syncUI(); renderGrid(); }
+
+$('#filters').addEventListener('click', e => {
+  const b = e.target.closest('[data-f]'); if(!b) return;
+  state[b.dataset.f] = state[b.dataset.f]===b.dataset.v ? '' : b.dataset.v;
+  syncUI(); renderGrid();
+});
+$('#f-price').addEventListener('input', e => { state.max = +e.target.value; syncUI(); renderGrid(); });
+$('#sort').addEventListener('change', e => { state.sort = e.target.value; renderGrid(); });
+$('#clear').onclick = clearFilters; $('#clear2').onclick = clearFilters;
+$('#filters-btn').onclick = () => $('#filters').classList.toggle('hidden');
+
+/* Links externos que pré-filtram a loja (data-age / data-cat) */
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-cat],[data-age]'); if(!a) return;
+  Object.assign(state,{ age:a.dataset.age||'', cat:a.dataset.cat||'', size:'', color:'', max:300 });
+  syncUI(); renderGrid();
+  if(location.hash==='#loja') window.scrollTo({top:0, behavior:'smooth'});
+});
+
+/* =====================================================
+   GUIA DE TAMANHOS + FAQ
+   ===================================================== */
+$('#size-tables').innerHTML = SIZE_TABLES.map(t=>`
+  <div class="reveal rounded-3xl border border-line bg-card p-5 sm:p-6">
+    <h2 class="font-display text-2xl font-semibold" style="color:${t.color}">${t.title}</h2>
+    <div class="mt-4 overflow-x-auto">
+      <table class="w-full min-w-[440px] text-left text-sm">
+        <thead class="text-white/50"><tr><th class="py-2 pr-4">Tamanho</th><th class="pr-4">Idade aprox.</th><th class="pr-4">Altura (cm)</th><th class="pr-4">Tórax (cm)</th><th>Cintura (cm)</th></tr></thead>
+        <tbody>${t.rows.map(r=>`<tr class="border-t border-line transition hover:bg-white/5"><td class="py-3 pr-4 font-display text-lg font-semibold">${r[0]}</td>${r.slice(1).map(c=>`<td class="py-3 pr-4">${c}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table>
+    </div>
+  </div>`).join('');
+
+$('#faq').innerHTML = FAQ.map(([q,a])=>`
+  <details class="group rounded-2xl border border-line bg-card px-5 py-4 transition hover:border-white/25">
+    <summary class="flex items-center justify-between gap-4 font-display text-lg font-semibold">${q}<i class="fa-solid fa-chevron-down chev text-sm text-sun"></i></summary>
+    <p class="mt-3 text-white/70">${a}</p>
+  </details>`).join('');
+
+/* =====================================================
+   FORMULÁRIO DE CONTATO → WhatsApp
+   ===================================================== */
+$('#contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const msg = `Olá! Meu nome é ${f.get('nome')}.\n\n${f.get('mensagem')}\n\nE-mail: ${f.get('email')}`;
+  window.open(wa(msg), '_blank', 'noopener');
+  $('#form-ok').classList.remove('hidden');
+  e.target.reset();
+});
+
+/* =====================================================
+   MENU MOBILE + ROTEADOR POR HASH
+   ===================================================== */
+const menu = $('#menu'), menuBtn = $('#menu-btn');
+function closeMenu(){ menu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.innerHTML='<i class="fa-solid fa-bars"></i>'; }
+menuBtn.onclick = () => {
+  const open = menu.classList.toggle('hidden') === false;
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+};
+
+const PAGES = ['home','loja','guia','quem-somos','ajuda','contato'];
+const HOME_ANCHORS = ['lancamentos','depoimentos'];
+const TITLES = {
+  home:'Monalisa 10 Kids | Moda infantil de 0 a 12 anos', loja:'Loja | Monalisa 10 Kids',
+  guia:'Guia de tamanhos | Monalisa 10 Kids', 'quem-somos':'Quem somos | Monalisa 10 Kids',
+  ajuda:'Políticas e ajuda | Monalisa 10 Kids', contato:'Contato | Monalisa 10 Kids'
+};
+
+const io = new IntersectionObserver(entries => entries.forEach(en => {
+  if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+}), { threshold:.12 });
+const observe = () => document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+
+function route(){
+  const raw = location.hash.slice(1) || 'home';
+  const isAnchor = HOME_ANCHORS.includes(raw);
+  const page = isAnchor ? 'home' : (PAGES.includes(raw) ? raw : 'home');
+  document.querySelectorAll('[data-page]').forEach(s => s.classList.toggle('hidden', s.dataset.page !== page));
+  document.querySelectorAll('[data-nav]').forEach(a => {
+    const on = a.dataset.nav === page;
+    a.classList.toggle('text-sun', on);
+    on ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current');
+  });
+  document.title = TITLES[page];
+  closeMenu();
+  if(isAnchor) requestAnimationFrame(() => document.getElementById(raw).scrollIntoView({behavior:'smooth'}));
+  else window.scrollTo({top:0});
+  observe();
+}
+window.addEventListener('hashchange', route);
+
+/* INIT */
+bindLinks(); syncUI(); renderGrid(); bindLinks(car); route();
+</script>
+</body>
+</html>
